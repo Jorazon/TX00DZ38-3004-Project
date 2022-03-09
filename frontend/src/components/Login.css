@@ -1,0 +1,53 @@
+.loginContainer {
+	background-color: white;
+	border-radius: 1rem;
+	overflow: hidden;
+	border-collapse: collapse;
+	outline-offset: -0.1rem;
+}
+
+.buttonContainer {
+	box-shadow: 0 0 1rem #0008;
+	display: flex;
+	background-color: dodgerblue;
+}
+
+.loginContainer,
+.loginContainer .fakebutton,
+.loginContainer button,
+.loginContainer input {
+	font-size: 1.2em;
+}
+
+.loginContainer input {
+	background-color: #eee;
+	border: none;
+	padding: 0.2em;
+	border-radius: 0.3rem;
+}
+
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 2rem;
+}
+
+.loginContainer .fakebutton {
+	margin: 0;
+	text-align: center;
+	width: 50%;
+	border-radius: 0;
+	border: none;
+	padding: 0.5rem;
+	background-color: white;
+	cursor: pointer;
+}
+
+.loginContainer .fakebutton:hover {
+	background-color: #ddf;
+}
+.loginContainer .fakebutton.active {
+	background-color: dodgerblue;
+}

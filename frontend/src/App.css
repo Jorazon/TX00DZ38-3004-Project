@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+}
+
+.item {
+	width: fit-content;
+	max-width: 20rem;
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 0.3rem;
+}
+
+.item .ButtonContainer {
+	float: right;
+	margin-left: 2rem;
+}
+
+.ItemContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin: 1rem;
+}
+
+button {
+	min-width: 2.3em;
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	margin: 0.1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+nav {
+	position: sticky;
+	background-color: white;
+	border-bottom: 0.3rem solid dodgerblue;
+	padding: 1rem;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+}

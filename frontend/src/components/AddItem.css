@@ -1,0 +1,24 @@
+.createForm {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 1rem;
+	width: max-content;
+	min-width: 50%;
+}
+
+.createForm textarea,
+.createForm input {
+	width: calc(100% - 0.4rem);
+}
+
+.createForm input,
+.createForm textarea {
+	background-color: #eee;
+	border: none;
+	padding: 0.2em;
+	border-radius: 0.3rem;
+}

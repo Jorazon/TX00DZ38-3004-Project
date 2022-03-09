@@ -1,0 +1,25 @@
+.searchBar {
+	border: 1px solid black;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0.25em;
+}
+
+.searchBar:focus-within {
+	box-shadow: 0 0 0 1px black;
+}
+
+.searchBar::after {
+	content: "🔎";
+}
+
+.searchBar input {
+	border: none;
+	height: 100%;
+}
+
+.searchBar input:focus {
+	outline: none;
+}
