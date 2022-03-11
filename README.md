@@ -1,3 +1,5 @@
+![Front page](/frontpage.png)
+
 # API JSON format
 
 ## `GET http://example.com/api/products`
