@@ -79,7 +79,7 @@ export default function App() {
 			<Inventory
 				items={items.filter((item) => item.name.toLowerCase().includes(searchTerm))}
 				userLoggedIn={userLoggedIn}
-				editFnction={editItem}
+				editFunction={editItem}
 				deleteFunction={deleteItem}
 			/>
 		</>
