@@ -1,6 +1,8 @@
 import dotenv from "dotenv";
 import express from "express";
 import bodyparser from "body-parser";
+import path from "path";
+import { fileURLToPath } from "url";
 import { createPool } from "mysql";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
@@ -29,9 +31,9 @@ const app = express();
 
 app.use(bodyparser.json());
 
-app.get("/", (req, res) => {
-	res.send("Hello World!");
-});
+app.use(
+	express.static(path.join(path.dirname(fileURLToPath(import.meta.url)), "../frontend/build")),
+);
 
 //--------------------PRODUCTS--------------------
 
